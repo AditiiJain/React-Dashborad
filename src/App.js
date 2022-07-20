@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+// import keys from '../config';
+const keys = {
+  apiKey: "YOUR_API_KEY",
+  spreadsheetId: "1kVwf5oIZMPqY4Y2WRj9NzeDgy3zBBj-px-Hl41sFlT8",
+};
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <h1 className="text-3xl font-bold underline text-gray-500" >
+  {keys.apiKey}
+  </h1>
   );
 }
 
